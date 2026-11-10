@@ -3,11 +3,11 @@
 -- Database: sales_analytics
 -- ============================================
 
--- 1. Create database
+-- 1. Creating database
 CREATE DATABASE IF NOT EXISTS sales_analytics;
 USE sales_analytics;
 
--- 2. Create tables
+-- 2. Creating tables
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
     customer_name VARCHAR(100),
@@ -32,7 +32,7 @@ CREATE TABLE Orders (
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
 
--- 3. Insert sample data
+-- 3. Inserting sample data
 INSERT INTO Customers VALUES
 (1, 'Alice', 'Chennai', 'India'),
 (2, 'Bob', 'Mumbai', 'India'),
